@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>index - My mdzk</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Modules</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.1.</strong> Control</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Modules/Control/index.html"><strong aria-hidden="true">1.1.1.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.2.</strong> DSP</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Modules/DSP/index.html"><strong aria-hidden="true">1.2.1.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> GUI</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Modules/GUI/Image2.html"><strong aria-hidden="true">1.3.1.</strong> Image2</a></li><li class="chapter-item expanded "><a href="../../Modules/GUI/List Entry 4.html"><strong aria-hidden="true">1.3.2.</strong> List Entry 4</a></li><li class="chapter-item expanded "><a href="../../Modules/GUI/Text Entry4.html"><strong aria-hidden="true">1.3.3.</strong> Text Entry4</a></li><li class="chapter-item expanded "><a href="../../Modules/GUI/index.html"><strong aria-hidden="true">1.3.4.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> MIDI</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.1.</strong> images</div></li><li class="chapter-item expanded "><a href="../../Modules/MIDI/MIDI to CV.html"><strong aria-hidden="true">1.4.2.</strong> MIDI to CV</a></li><li class="chapter-item expanded "><a href="../../Modules/MIDI/MIDI-CV 2.html"><strong aria-hidden="true">1.4.3.</strong> MIDI-CV 2</a></li><li class="chapter-item expanded "><a href="../../Modules/MIDI/index.html" class="active"><strong aria-hidden="true">1.4.4.</strong> index</a></li></ol></li><li class="chapter-item expanded "><a href="../../Modules/Spring.html"><strong aria-hidden="true">1.5.</strong> Spring</a></li><li class="chapter-item expanded "><a href="../../Modules/Sub-Control.html"><strong aria-hidden="true">1.6.</strong> Sub-Control</a></li><li class="chapter-item expanded "><a href="../../Modules/index.html"><strong aria-hidden="true">1.7.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Resources</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Content</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Resources/Content/DeHaupt SynthEdit User's Guide.html"><strong aria-hidden="true">2.1.1.</strong> DeHaupt SynthEdit User's Guide</a></li><li class="chapter-item expanded "><a href="../../Resources/Content/JWP Video Series.html"><strong aria-hidden="true">2.1.2.</strong> JWP Video Series</a></li><li class="chapter-item expanded "><a href="../../Resources/Content/MBR SynthEdit Wiki.html"><strong aria-hidden="true">2.1.3.</strong> MBR SynthEdit Wiki</a></li><li class="chapter-item expanded "><a href="../../Resources/Content/SynthEdit Miraheze Wiki.html"><strong aria-hidden="true">2.1.4.</strong> SynthEdit Miraheze Wiki</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Groups</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Resources/Groups/SynthEdit Boards.net.html"><strong aria-hidden="true">2.2.1.</strong> SynthEdit Boards.net</a></li><li class="chapter-item expanded "><a href="../../Resources/Groups/SynthEdit Facebook Group.html"><strong aria-hidden="true">2.2.2.</strong> SynthEdit Facebook Group</a></li><li class="chapter-item expanded "><a href="../../Resources/Groups/SynthEdit Groups.io.html"><strong aria-hidden="true">2.2.3.</strong> SynthEdit Groups.io</a></li><li class="chapter-item expanded "><a href="../../Resources/Groups/SynthEdit QA.html"><strong aria-hidden="true">2.2.4.</strong> SynthEdit QA</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Skins</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Skins/Global.html"><strong aria-hidden="true">3.1.</strong> Global</a></li><li class="chapter-item expanded "><a href="../../Skins/index.html"><strong aria-hidden="true">3.2.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Tips</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> images</div></li><li class="chapter-item expanded "><a href="../../Tips/Avoid Unused Modules.html"><strong aria-hidden="true">4.2.</strong> Avoid Unused Modules</a></li><li class="chapter-item expanded "><a href="../../Tips/Per Container Limits.html"><strong aria-hidden="true">4.3.</strong> Per Container Limits</a></li></ol></li><li class="chapter-item expanded "><a href="../../SDK.html"><strong aria-hidden="true">5.</strong> SDK</a></li><li class="chapter-item expanded "><a href="../../VST.html"><strong aria-hidden="true">6.</strong> VST</a></li><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">7.</strong> index</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">My mdzk</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Musical Instrument Digital Interface.</p>
+<h1 id="nodes"><a class="header" href="#nodes">Nodes</a></h1>
+<ul>
+<li><a href="MIDI-CV%202.html">MIDI-CV 2</a></li>
+<li><a href="MIDI%20to%20CV.html">MIDI to CV</a></li>
+</ul>
+<h1 id="sources"><a class="header" href="#sources">Sources</a></h1>
+<p><a href="https://en.wikipedia.org/wiki/MIDI">MIDI on Wikipedia</a></p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.js" integrity="sha384-ov99pRO2tAc0JuxTVzf63RHHeQTJ0CIawbDZFiFTzB07aqFZwEu2pz4uzqL+5OPG" crossorigin="anonymous"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var math = document.querySelectorAll("[class^=katex]");
+    for (var i = 0; i < math.length; i++) {
+      // Convert escaped ampersands before rendering
+      var toRender = math[i].textContent.replace(/&amp;/g, '&');
+      katex.render(toRender, math[i]);
+    }
+}, false)
+</script>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Modules/MIDI/MIDI-CV 2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../Modules/Spring.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Modules/MIDI/MIDI-CV 2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../Modules/Spring.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

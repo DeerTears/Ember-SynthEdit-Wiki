@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Global - My mdzk</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Modules</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.1.</strong> Control</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Modules/Control/index.html"><strong aria-hidden="true">1.1.1.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.2.</strong> DSP</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Modules/DSP/index.html"><strong aria-hidden="true">1.2.1.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> GUI</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Modules/GUI/Image2.html"><strong aria-hidden="true">1.3.1.</strong> Image2</a></li><li class="chapter-item expanded "><a href="../Modules/GUI/List Entry 4.html"><strong aria-hidden="true">1.3.2.</strong> List Entry 4</a></li><li class="chapter-item expanded "><a href="../Modules/GUI/Text Entry4.html"><strong aria-hidden="true">1.3.3.</strong> Text Entry4</a></li><li class="chapter-item expanded "><a href="../Modules/GUI/index.html"><strong aria-hidden="true">1.3.4.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> MIDI</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.1.</strong> images</div></li><li class="chapter-item expanded "><a href="../Modules/MIDI/MIDI to CV.html"><strong aria-hidden="true">1.4.2.</strong> MIDI to CV</a></li><li class="chapter-item expanded "><a href="../Modules/MIDI/MIDI-CV 2.html"><strong aria-hidden="true">1.4.3.</strong> MIDI-CV 2</a></li><li class="chapter-item expanded "><a href="../Modules/MIDI/index.html"><strong aria-hidden="true">1.4.4.</strong> index</a></li></ol></li><li class="chapter-item expanded "><a href="../Modules/Spring.html"><strong aria-hidden="true">1.5.</strong> Spring</a></li><li class="chapter-item expanded "><a href="../Modules/Sub-Control.html"><strong aria-hidden="true">1.6.</strong> Sub-Control</a></li><li class="chapter-item expanded "><a href="../Modules/index.html"><strong aria-hidden="true">1.7.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Resources</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Content</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Resources/Content/DeHaupt SynthEdit User's Guide.html"><strong aria-hidden="true">2.1.1.</strong> DeHaupt SynthEdit User's Guide</a></li><li class="chapter-item expanded "><a href="../Resources/Content/JWP Video Series.html"><strong aria-hidden="true">2.1.2.</strong> JWP Video Series</a></li><li class="chapter-item expanded "><a href="../Resources/Content/MBR SynthEdit Wiki.html"><strong aria-hidden="true">2.1.3.</strong> MBR SynthEdit Wiki</a></li><li class="chapter-item expanded "><a href="../Resources/Content/SynthEdit Miraheze Wiki.html"><strong aria-hidden="true">2.1.4.</strong> SynthEdit Miraheze Wiki</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Groups</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Resources/Groups/SynthEdit Boards.net.html"><strong aria-hidden="true">2.2.1.</strong> SynthEdit Boards.net</a></li><li class="chapter-item expanded "><a href="../Resources/Groups/SynthEdit Facebook Group.html"><strong aria-hidden="true">2.2.2.</strong> SynthEdit Facebook Group</a></li><li class="chapter-item expanded "><a href="../Resources/Groups/SynthEdit Groups.io.html"><strong aria-hidden="true">2.2.3.</strong> SynthEdit Groups.io</a></li><li class="chapter-item expanded "><a href="../Resources/Groups/SynthEdit QA.html"><strong aria-hidden="true">2.2.4.</strong> SynthEdit QA</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Skins</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Skins/Global.html" class="active"><strong aria-hidden="true">3.1.</strong> Global</a></li><li class="chapter-item expanded "><a href="../Skins/index.html"><strong aria-hidden="true">3.2.</strong> index</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Tips</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> images</div></li><li class="chapter-item expanded "><a href="../Tips/Avoid Unused Modules.html"><strong aria-hidden="true">4.2.</strong> Avoid Unused Modules</a></li><li class="chapter-item expanded "><a href="../Tips/Per Container Limits.html"><strong aria-hidden="true">4.3.</strong> Per Container Limits</a></li></ol></li><li class="chapter-item expanded "><a href="../SDK.html"><strong aria-hidden="true">5.</strong> SDK</a></li><li class="chapter-item expanded "><a href="../VST.html"><strong aria-hidden="true">6.</strong> VST</a></li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">7.</strong> index</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">My mdzk</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><code>global.txt</code> is a necessary file for every <span class="missing-link" style="color:darkred;">notes/Skins/index</span> folder in <span class="missing-link" style="color:darkred;">SynthEdit</span>. It describes the system fonts (or distributed fonts) to use when drawing text in the plugin.</p>
+<h2 id="global-syntax"><a class="header" href="#global-syntax">Global Syntax</a></h2>
+<p>The syntax for <code>global.txt</code> is CSS1. It was recommended for use in 1996, revised in 2008, before being superseded on September 13th 2018 by <a href="https://www.w3.org/TR/CSS/">CSS</a>. However, <code>global.txt</code> still uses CSS1 rather than modern CSS. The original reference is here https://www.w3.org/TR/REC-CSS1/.</p>
+<p>There are better learning resources for modern CSS these days than there ever were for CSS1. Here's the most important differences, everything else is basically fine if you know CSS.</p>
+<p>CSS	| CSS1
+---	| --
+;	| newline
+:	| space
+curly brackets | put on the same line
+parenthesis | put on the same line
+<code>#ffffff</code> | <code>#FFFFFF</code>
+anything cool not mentioned here | don't even bother</p>
+<p>There's no classes, but you can define unique <code>FONT_CATEGORY</code> selectors in parenthesis, and call upon it with any <code>Style</code> property on nodes found in <span class="missing-link" style="color:darkred;">SynthEdit</span>, such as <a href="..%5CModules%5CGUI%5CText%20Entry4.html">Text Entry4</a>.</p>
+<p>Everything else should be reletavely famliiar for a CSS programmer.</p>
+<h2 id="font_category"><a class="header" href="#font_category"><code>FONT_CATEGORY</code></a></h2>
+<p>Each font definition starts with <code>FONT_CATEGORY </code> followed by one of the following categories:</p>
+<p>category		| description
+---------------	| ----------
+module_title	| ??
+panel_group		| ??
+control_label	| ??
+control_edit	| ??
+switch_label	| LED Stack &amp; Rotary Switch item labels
+selector_text	| ??
+tty				| Container and VST plugin display text
+plug			| Heading on properties screen</p>
+<blockquote>
+<p>#todo See what each of these cateogires are in a more tangible way.</p>
+</blockquote>
+<p>I recommend you copy the <code>FONT_CATEGORY</code> definitions from the <code>global.txt</code> of other <span class="missing-link" style="color:darkred;">notes/Skins/index</span> folders, so you don't have to know for certain what each of these does, and keep using the same relative changes in font size between categories.</p>
+<p>You can also define <code>FONT_CATEGORY</code> styles by writing a name in quotation marks. These styles can be used in the <a href="..%5CModules%5CGUI%5CText%20Entry4.html">Text Entry4</a> node, under its <em>Style</em> property. Styles are not case-sensitive.</p>
+<p>Examples styles are:</p>
+<ul>
+<li>&quot;properties_heading&quot;</li>
+<li>&quot;Normal&quot;</li>
+<li>&quot;Heading 1&quot;</li>
+<li>&quot;Heading 2&quot;</li>
+<li>&quot;Heading 3&quot;</li>
+</ul>
+<p>Each <code>FONT_CATEGORY</code> can have any number of the following properties:</p>
+<h2 id="font-family"><a class="header" href="#font-family"><code>font-family</code></a></h2>
+<p>Choose one or more font families to use by putting them in a comma separated list. These must be system fonts you can find on the user's computer, or otherwise distributed with the VST itself. </p>
+<p>Example: <code>Arial, Helvetica, &quot;sans-Serif&quot;</code></p>
+<p>The comma separated list of families should end with the category it falls into as a fallback, in case none of the chosen families can be found.</p>
+<table><thead><tr><th>Font Family</th><th>Common Replacements</th></tr></thead><tbody>
+<tr><td>&quot;sans-serif&quot;</td><td>Arial, Helvetica</td></tr>
+<tr><td>&quot;serif&quot;</td><td>Times, Times New Roman</td></tr>
+<tr><td>&quot;cursive&quot;</td><td>Zapf-Chancery</td></tr>
+<tr><td>&quot;fantasy&quot;</td><td>Western</td></tr>
+<tr><td>&quot;monospace&quot;</td><td>Courier New</td></tr>
+</tbody></table>
+<p>Each of the default fonts may be subject to limitations like only allowing certain font sizes, weights, and styles. You can prevent font fallbacks by (legally!!) providing the fonts yourself in the VST distribution and asking the user to install it, or by including the file in </p>
+<p>SynthEdit's help page doesn't recommend distributing fonts with your VST for legal reasons, but you can download open source, free-to-distribute fonts on https://fonts.google.com/. Please do not re-distribute fonts in a way that breaks the terms of service from font creators and licensed distributors who provide these fonts.</p>
+<blockquote>
+<p>#todo Find a working example of linking a font into SynthEdit's text renderer.</p>
+</blockquote>
+<h2 id="font-size"><a class="header" href="#font-size"><code>font-size</code></a></h2>
+<p>How large in pts the font should be. Only takes integers.</p>
+<p>Example: <code>font-size 12</code></p>
+<h2 id="font-color"><a class="header" href="#font-color"><code>font-color</code></a></h2>
+<p>The color of the font in hexadecimal.</p>
+<blockquote>
+<p>#todo Does this support web color names like White, Black, and Goldenrod?</p>
+</blockquote>
+<p>Example: <code>font-color #FFFFFF</code> makes the text white. <code>font-color #000000</code> for black, <code>#00FF00</code> for green. Any hexadecimal combination is valid.</p>
+<h2 id="font-style"><a class="header" href="#font-style"><code>font-style</code></a></h2>
+<p>For fonts without many weights, you can occasionally choose a font style to make text look bold or italicized.</p>
+<p>Examples</p>
+<ul>
+<li><code>font-style normal</code></li>
+<li><code>font-style italic</code></li>
+</ul>
+<p>Styles not supported:</p>
+<ul>
+<li><code>oblique</code></li>
+</ul>
+<h2 id="font-weight"><a class="header" href="#font-weight"><code>font-weight</code></a></h2>
+<p>An optional descriptor to select a specific font weight within a font family, if it's installed or provided. The most common choice is Bold. Other font weights distributed with a font family can be used if they're included, such as Medium, Light, Thin, Italic, Bold Italic, and Condensed. Some fonts come in numbered weights such as 100, 200, and 300. These are also valid inputs. Consult the font weight names of the font you're using and it should be usable here.</p>
+<p>Examples:</p>
+<ul>
+<li><code>font-weight bold</code></li>
+<li><code>font-weight 400</code></li>
+<li><code>font-weight light italic</code></li>
+</ul>
+<p>Weights not supported:</p>
+<ul>
+<li><code>bolder</code></li>
+<li><code>lighter</code></li>
+</ul>
+<h2 id="vst-vertical-offset"><a class="header" href="#vst-vertical-offset"><code>vst-vertical-offset</code></a></h2>
+<p>Specify an offset in pixels when drawing text. This is ideally to compensate for changes in graphics API when exporting 64 bit plugins or VST3 versions of plugins.</p>
+<p>Example: <code>vst-vertical-offset 16</code></p>
+<h2 id="legacy-vertical-offset"><a class="header" href="#legacy-vertical-offset"><code>legacy-vertical-offset</code></a></h2>
+<p>Changes the height of the baseline on the text when used in a VST2 or 32bit versions of the plugin. This will override the value set in <code>vst3-vertical-offset</code>.</p>
+<p>Example: <code>legacy-vertical-offset 16</code></p>
+<h1 id="full-example-globaltxt"><a class="header" href="#full-example-globaltxt">Full example Global.txt</a></h1>
+<pre><code class="language-css">FONT_CATEGORY module_title
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 12
+font-color #FFFFFF
+legacy-vertical-offset 0
+
+FONT_CATEGORY panel_group
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 14
+font-weight bold
+font-color #FFFFFF
+legacy-vertical-offset 0
+
+FONT_CATEGORY control_label
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 14
+font-weight bold
+font-color #FFFFFF
+legacy-vertical-offset 0
+
+FONT_CATEGORY control_edit
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 14
+font-weight bold
+;font-color #000000 - don't apply to edit boxs
+legacy-vertical-offset 0
+
+; this category is for LED Stack item labels and rotary switch labels
+FONT_CATEGORY switch_label
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 10
+font-color #F5F5F5
+legacy-vertical-offset 0
+
+FONT_CATEGORY selector_text
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 14
+font-weight bold
+font-color #ff0000
+legacy-vertical-offset 0
+
+; the writing on container and VST plugin displays
+FONT_CATEGORY tty
+font-family terminal, monospace, Courier New
+font-size 10
+font-color #00f000
+background-color #000000
+legacy-vertical-offset 0
+
+; Heading on properties screen
+FONT_CATEGORY &quot;properties_heading&quot;
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 14
+font-weight bold
+font-color #000000
+background-color #ffffff
+legacy-vertical-offset 0
+
+; plugs
+FONT_CATEGORY plug
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 10
+font-color #000000
+legacy-vertical-offset 0
+
+FONT_CATEGORY &quot;Normal&quot;
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 12
+font-color #000000
+background-color  #ffffff
+text-align center
+legacy-vertical-offset 0
+
+FONT_CATEGORY &quot;Heading 1&quot;
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 28
+font-color #fff7f7
+text-align center
+text-decoration underline
+;font-style italic
+font-weight 900 
+legacy-vertical-offset 0
+
+FONT_CATEGORY &quot;Heading 2&quot;
+text-align center
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 18
+legacy-vertical-offset 0
+
+FONT_CATEGORY &quot;Heading 3&quot;
+text-align center
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 14
+legacy-vertical-offset 0
+
+FONT_CATEGORY &quot;User 1&quot;
+font-family Arial, Helvetica, &quot;sans-Serif&quot;
+font-size 14
+font-color #000000
+background-color  #ffffff
+text-align left
+legacy-vertical-offset 0
+
+FONT_CATEGORY &quot;User 2&quot;
+font-family Courier
+legacy-vertical-offset 0
+
+FONT_CATEGORY &quot;User 3&quot;
+font-family Fixedsys
+legacy-vertical-offset 0
+
+</code></pre>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.20/dist/katex.min.js" integrity="sha384-ov99pRO2tAc0JuxTVzf63RHHeQTJ0CIawbDZFiFTzB07aqFZwEu2pz4uzqL+5OPG" crossorigin="anonymous"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var math = document.querySelectorAll("[class^=katex]");
+    for (var i = 0; i < math.length; i++) {
+      // Convert escaped ampersands before rendering
+      var toRender = math[i].textContent.replace(/&amp;/g, '&');
+      katex.render(toRender, math[i]);
+    }
+}, false)
+</script>
+<hr />
+<blockquote>
+<ul>
+<li><a href="index.html">index</a></li>
+</ul>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Resources/Groups/SynthEdit QA.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../Skins/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Resources/Groups/SynthEdit QA.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../Skins/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
